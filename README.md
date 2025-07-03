@@ -1,7 +1,3 @@
-create something every day.
-
-have fun while doing so.
-
 ### setup for runpod (this is probably incorrect in many ways)
 
 * make sure your runpod secrets has `WANDB_API_KEY = your-key` configured.
@@ -27,7 +23,7 @@ have fun while doing so.
     ```
 
 
-# clone from gh
+### clone from gh
 1. Install `uv` (fast Python package installer):
    ```bash
    # On Linux/macOS:
