@@ -1,12 +1,12 @@
+total_training_steps = 30_000  # probably we should do more
+batch_size = 4096
+total_training_tokens = total_training_steps * batch_size
+
+lr_warm_up_steps = 0
+lr_decay_steps = total_training_steps // 5  # 20% of training
+l1_warm_up_steps = total_training_steps // 20  # 5% of training
+
 def main():
-    total_training_steps = 30_000  # probably we should do more
-    batch_size = 4096
-    total_training_tokens = total_training_steps * batch_size
-
-    lr_warm_up_steps = 0
-    lr_decay_steps = total_training_steps // 5  # 20% of training
-    l1_warm_up_steps = total_training_steps // 20  # 5% of training
-
     cfg = LanguageModelSAERunnerConfig(
         # Data Generating Function (Model + Training Distibuion)
         model_name="tiny-stories-1L-21M",  # our model (more options here: https://neelnanda-io.github.io/TransformerLens/generated/model_properties_table.html)

@@ -2407,6 +2407,7 @@ dependencies = [
     { name = "sae-lens" },
     { name = "torch" },
     { name = "transformer-lens" },
+    { name = "wandb" },
 ]
 
 [package.metadata]
@@ -2414,6 +2415,7 @@ requires-dist = [
     { name = "sae-lens", specifier = ">=5.10.7" },
     { name = "torch", specifier = ">=2.7.1" },
     { name = "transformer-lens", specifier = ">=2.16.1" },
+    { name = "wandb", specifier = ">=0.21.0" },
 ]
 
 [[package]]
