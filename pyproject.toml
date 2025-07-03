@@ -1,0 +1,11 @@
+[project]
+name = "sae-fun"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sae-lens>=5.10.7",
+    "torch>=2.7.1",
+    "transformer-lens>=2.16.1",
+]

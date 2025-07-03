@@ -21,6 +21,6 @@ have fun while doing so.
    ```
 
 3. Install requirements
-
-    `uv add sae-lens transformer-lens circuitvis`
+    `uv init`
+    `uv add transformer-lens sae-lens circuitvis`
 
