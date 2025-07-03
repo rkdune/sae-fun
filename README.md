@@ -6,7 +6,7 @@ have fun while doing so.
 
 * make sure your runpod secrets has `WANDB_API_KEY = your-key` configured.
 
-### on start
+### from scratch
 
 1. Install `uv` (fast Python package installer):
    ```bash
@@ -21,6 +21,31 @@ have fun while doing so.
    ```
 
 3. Install requirements
-    `uv init`
-    `uv add transformer-lens sae-lens circuitvis`
+    ```bash
+    uv init
+    uv add transformer-lens sae-lens circuitvis
+    ```
 
+
+# clone from gh
+1. Install `uv` (fast Python package installer):
+   ```bash
+   # On Linux/macOS:
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Restart your shell for `uv` to apply.
+   ```bash
+   # Run this to confirm installation
+   uv --version
+   ```
+
+3. Clone the repo
+   ```bash
+   git clone https://github.com/rkdune/sae-fun.git
+   ```
+
+3. Download requirements
+   ```bash
+   uv sync
+   ```
